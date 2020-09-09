@@ -1,0 +1,51 @@
+{
+  "name": "@authnomicon/fido",
+  "version": "0.0.0",
+  "description": "FIDO components for the Authnomicon project.",
+  "keywords": [
+    "fido",
+    "u2f",
+    "uaf"
+  ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/authnomicon/fido.git"
+  },
+  "bugs": {
+    "url": "http://github.com/authnomicon/fido/issues"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "./lib",
+  "namespace": "org.authnomicon/fido",
+  "components": [
+    "u2f/authenticationresponse",
+    "u2f/registrationresponse",
+    "u2f/http/service",
+    "u2f/http/scheme"
+  ],
+  "directories": {
+    "com": "com"
+  },
+  "dependencies": {
+    "base64url": "^3.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  }
+}
