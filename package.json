@@ -26,7 +26,6 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "main": "./lib",
   "namespace": "org.authnomicon/fido",
   "components": [
     "u2f/authenticationresponse",
@@ -38,6 +37,8 @@
     "com": "com"
   },
   "dependencies": {
+    "@fidm/x509": "^1.2.1",
+    "asn1.js-rfc5280": "^3.0.0",
     "base64url": "^3.0.1",
     "express": "^4.17.1"
   },
